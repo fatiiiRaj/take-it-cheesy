@@ -1,0 +1,206 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Color Variables */
+:root {
+    --bg-dark: #2c1a11; /* Dark Brown */
+    --bg-light-brown: #3d2519; /* Secondary lighter brown */
+    --yellow-primary: #ffcc00; /* Bright Cheesy Yellow */
+    --yellow-hover: #e6b800;
+    --text-white: #ffffff;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    scroll-behavior: smooth;
+}
+
+/* Header & Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: var(--bg-light-brown);
+    border-bottom: 3px solid var(--yellow-primary);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    color: var(--text-white);
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--yellow-primary);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-white);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--yellow-primary);
+}
+
+.btn {
+    background-color: var(--yellow-primary);
+    color: var(--bg-dark) !important;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: var(--text-white);
+}
+
+/* Hero Section */
+.hero {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(44, 26, 17, 0.7), rgba(44, 26, 17, 0.9)), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1500&q=80'); /* Temporary background image */
+    background-size: cover;
+    background-position: center;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 4rem;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.hero-content h1 span {
+    color: var(--yellow-primary);
+    text-shadow: 2px 2px var(--bg-dark);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    color: #e0e0e0;
+}
+
+.btn-primary {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--yellow-primary);
+    color: var(--bg-dark);
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(255, 204, 0, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: var(--yellow-hover);
+    transform: translateY(-3px);
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.menu-section h2 span {
+    color: var(--yellow-primary);
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    background-color: var(--bg-light-brown);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    padding: 30px;
+    width: 300px;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.menu-card:hover {
+    border-color: var(--yellow-primary);
+    transform: translateY(-5px);
+}
+
+.food-img {
+    font-size: 4rem; /* Temporary Emoji style, replace with <img> later */
+    margin-bottom: 15px;
+}
+
+.menu-card h3 {
+    color: var(--yellow-primary);
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.menu-card p {
+    font-size: 0.9rem;
+    color: #dcdcdc;
+    margin-bottom: 15px;
+}
+
+.menu-card .price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--text-white);
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg-light-brown);
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid var(--yellow-primary);
+    font-size: 0.9rem;
+}
+
+footer span {
+    color: var(--yellow-primary);
+    font-weight: bold;
+}
